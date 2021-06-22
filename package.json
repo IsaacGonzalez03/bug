@@ -1,0 +1,13 @@
+{
+  "name": "bug",
+  "version": "1.0.0",
+  "scripts": {
+    "setup:app": "npm run setup:client && npm run setup:server",
+    "setup:client": "cd bug.client && npm i",
+    "setup:server": "cd bug.server && npm i",
+    "start": "node bug.server/index.js"
+  },
+  "engines": {
+    "node": "^14.17.0"
+  }
+}
