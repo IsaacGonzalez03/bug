@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
       <div class="d-flex flex-column align-items-center text-success">
-        <h4 class="text-shadow">
+        <h4 class="text-shadow cursor">
           Debugger <i class="fas fa-viruses"></i>
         </h4>
       </div>

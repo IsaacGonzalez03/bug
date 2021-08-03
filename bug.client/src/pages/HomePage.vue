@@ -21,14 +21,14 @@
             </div>
           </div>
           <div class="card-footer">
-            <button type="submit" class="btn btn-warning btn-sm float-right shadow-sm text-light" title="Submit Form">
+            <button type="submit" class="btn btn-warning btn-sm float-right shadow-sm text-light cursor" title="Submit Form">
               Submit
             </button>
           </div>
         </form>
         <div class="row">
           <div class="col">
-            <button class="btn btn-success my-3" type="button" @click="filterBugs">
+            <button class="btn btn-success my-3 cursor" type="button" @click="filterBugs">
               Sort Bugs
             </button>
           </div>
@@ -48,7 +48,6 @@ import { useRoute } from 'vue-router'
 export default {
   name: 'Home',
   setup() {
-    const route = useRoute()
     const state = reactive({
       bugOrder: true,
       account: computed(() => AppState.account),
@@ -56,7 +55,7 @@ export default {
       bugs: computed(() => AppState.bugs),
       newBug: {}
     })
-    onMounted(async() => await bugsService.getAllBugs(route.params.id))
+    onMounted(async() => await bugsService.getAllBugs())
     return {
       state,
       async filterBugs() {

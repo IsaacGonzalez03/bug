@@ -1,6 +1,6 @@
 <template>
   <div class="row justify-content-center">
-    <div class="col-8 card my-2 bg-dark shadow" @click="bugDetails" title="Bug Details">
+    <div class="col-8 card my-2 bg-dark shadow cursor" @click="bugDetails" title="Bug Details">
       <div class="row p-4">
         <div class="col-4 align-middle pt-5">
           <img :src="bug.creator.picture" class="rounded-circle image-fluid img-thumbnail img-height shadow">

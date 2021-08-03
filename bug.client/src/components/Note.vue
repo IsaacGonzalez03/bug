@@ -1,6 +1,6 @@
 <template>
-  <div class="row justify-content-center">
-    <div class="col-11 card my-1">
+  <div class="row justify-content-center p-3">
+    <div class="col-11 card my-1 d-flex">
       <p>{{ note.creator.name }}: {{ note.body }}</p>
       <img :src="note.creator.picture" alt="creator picture" class="rounded-circle img-thumbnail img-height">
       <i @click="deleteNote" class="fas fa-trash-alt text-danger float-right" v-if="note.creator.id ===state.account.id"></i>

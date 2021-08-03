@@ -51,7 +51,7 @@
       <div class="col-11">
         <form @submit.prevent="createNote" class="input-group">
           <input class="form-control" type="text" placeholder="notes..." v-model="state.newNote.body">
-          <button type="submit" class="btn btn-success" id="button-addon2">
+          <button type="submit" class="btn btn-success cursor" id="button-addon2" title="send note">
             <i class="fas fa-paper-plane"></i>
           </button>
         </form>

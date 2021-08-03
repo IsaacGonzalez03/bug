@@ -24,3 +24,11 @@ main {
 body{
   font-family: 'Open Sans', sans-serif;
 }
+
+.cursor{
+  cursor: pointer;
+  transition: all .2s ease;
+}
+.cursor:hover{
+  transform: scale(1.05);
+}
