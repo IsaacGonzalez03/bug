@@ -44,7 +44,6 @@ import { reactive, computed, onMounted } from 'vue'
 import { AppState } from '../AppState'
 import { bugsService } from '../services/BugsService'
 import Notification from '../utils/Notification'
-import { useRoute } from 'vue-router'
 export default {
   name: 'Home',
   setup() {
