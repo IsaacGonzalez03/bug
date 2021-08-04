@@ -6,7 +6,7 @@
     "setup:app": "npm run setup:server && npm run setup:client",
     "setup:client": "cd bug.client && npm i",
     "setup:server": "cd bug.server && npm i",
-    "start": "node bug/index.js"
+    "start": "node bug.server/index.js"
   },
   "engines": {
     "node": "^14.17.0"
