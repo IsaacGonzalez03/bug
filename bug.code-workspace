@@ -1,11 +1,11 @@
 {
   "folders": [
     {
-      "path": "./bug.client",
+      "path": "bug.client",
       "name": "client"
     },
     {
-      "path": "./bug.server",
+      "path": "bug.server",
       "name": "server"
     }
   ],
