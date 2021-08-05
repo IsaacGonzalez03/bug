@@ -1,6 +1,13 @@
 <template>
   <div class="about">
-    <h1>This is the about page</h1>
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col">
+          <h1>Welcome to Bug Log!</h1>
+          <p>Report your Bugs!</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
