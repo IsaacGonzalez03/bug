@@ -29,7 +29,7 @@
         <div class="row">
           <div class="col">
             <button class="btn btn-success my-3 cursor" type="button" @click="filterBugs">
-              Sort Bugs
+              Newest Open Bugs
             </button>
           </div>
         </div>

@@ -1,5 +1,3 @@
-import { logger } from '../utils/Logger'
-
 const { AppState } = require('../AppState')
 const { router } = require('../router')
 const { api } = require('./AxiosService')
@@ -8,11 +6,10 @@ class BugsService {
   async getAllBugs() {
     const res = await api.get('api/bugs')
     AppState.bugs = res.data
-    logger.log(res.data)
   }
 
   async filterBugs() {
-    AppState.bugs = AppState.bugs.filter(b => b.closed === false)
+    AppState.bugs = AppState.bugs.filter(b => b.closed === false).reverse()
   }
 
   async getBugById(id) {
