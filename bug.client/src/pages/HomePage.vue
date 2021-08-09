@@ -35,7 +35,11 @@
         </div>
       </div>
     </div>
-    <Bug v-for="bug in state.bugs" :key="bug.id" :bug="bug" />
+    <div class="row">
+      <div class="col">
+        <Bug v-for="bug in state.bugs" :key="bug.id" :bug="bug" />
+      </div>
+    </div>
   </div>
 </template>
 
