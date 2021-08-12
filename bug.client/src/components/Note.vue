@@ -1,9 +1,14 @@
 <template>
   <div class="row justify-content-center p-3">
-    <div class="col-11 card my-1 d-flex">
-      <p>{{ note.creator.name }}: {{ note.body }}</p>
-      <img :src="note.creator.picture" alt="creator picture" class="rounded-circle img-thumbnail img-height">
-      <i @click="deleteNote" class="fas fa-trash-alt text-danger float-right" v-if="note.creator.id ===state.account.id"></i>
+    <div class="col-11 card pl-0 cursor">
+      <div class="my-1 d-flex p-3 align-items-center">
+        <img :src="note.creator.picture" alt="creator picture" class="rounded-circle img-thumbnail img-height">
+        <tr></tr>
+        <p class="p-0 m-0">
+          {{ note.creator.name }}: {{ note.body }}
+        </p>
+        <i @click="deleteNote" class="fas fa-trash-alt text-danger ms-auto cursor" v-if="note.creator.id ===state.account.id"></i>
+      </div>
     </div>
   </div>
 </template>

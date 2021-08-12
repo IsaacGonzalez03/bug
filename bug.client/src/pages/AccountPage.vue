@@ -1,8 +1,12 @@
 <template>
-  <div class="about text-center">
-    <h1>Welcome {{ account.name }}</h1>
-    <img class="rounded" :src="account.picture" alt="" />
-    <p>{{ account.email }}</p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col d-flex">
+        <div>
+          <h1>acount bugs under construction</h1>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -12,7 +16,11 @@ import { AppState } from '../AppState'
 export default {
   name: 'Account',
   setup() {
+    const state = ({
+      bugs: computed(() => AppState.bugs)
+    })
     return {
+      state,
       account: computed(() => AppState.account)
     }
   }
