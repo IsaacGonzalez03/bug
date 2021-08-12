@@ -1,12 +1,12 @@
 <template>
   <div class="row justify-content-center">
-    <div class="col-8 card my-2 bg-dark shadow cursor" @click="bugDetails" title="Bug Details">
+    <div class="col-10 card my-2 bg-dark shadow cursor" @click="bugDetails" title="Bug Details">
       <div class="row p-4">
-        <div class="col-4 align-middle pt-5">
+        <div class="col-md-4 align-middle pt-5 order-2">
           <img :src="bug.creator.picture" class="rounded-circle image-fluid img-thumbnail img-height shadow">
           <p>{{ bug.creator.name }}</p>
         </div>
-        <div class="col-8">
+        <div class="col-md-8 order-1">
           <div class="card my-6 shadow">
             <h5 class="card-header">
               {{ bug.title }}
